@@ -1,9 +1,6 @@
-# aiohttp
-# aiohttp-jinja2
-# telethon
-# aiohttp_session[secure]
 python-dotenv
 cryptg
 pillow
 pyrogram
+tinydb
 TgCrypto
