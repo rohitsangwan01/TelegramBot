@@ -36,9 +36,10 @@ async def hello(client, message):
         print(message.text)
 
         # First Handle All Commands
-        if(message.text.startswith('/')):
-            await message.reply_text(HandleCommands(message.text))
-            return
+        if(message.text != None):
+            if(message.text.startswith('/')):
+                await message.reply_text(HandleCommands(message.text))
+                return
 
         # First We will Check if Message contains a VideoFile or Not
         if(message.video == None):
